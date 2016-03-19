@@ -12,7 +12,6 @@ Tdist=D(town(n),town(1));
 for i=1:n-1                               % initial length
     Tdist=Tdist+D(town(i),town(i+1));     % of route
 end
-
 T=1;     % initial temperature
 i=0;
 while i < 100  % stop if no changes for 100 iterations
