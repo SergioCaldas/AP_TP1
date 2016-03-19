@@ -1,4 +1,4 @@
-function PARtraveling(n,procs)
+function PARtraveling(n,procs,x,y)
 
 % This is a simulation of a parallel execution on p processors of the code
 % traveling which uses simulated annealing to find the shortest route to go
@@ -8,7 +8,7 @@ function PARtraveling(n,procs)
 % costs. The parallel solution is thus the answer with smaller cost.
 
 % generates the position of each town in a square of side 10...
-x=10*rand(1,n); y=10*rand(1,n);
+%x=10*rand(1,n); y=10*rand(1,n);
 % ... plots them
 plot([x,x(1)],[y,y(1)],'b-',x,y,'o',x(1),y(1),'*')
 % ... and computes the distances between them 
