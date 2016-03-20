@@ -1,4 +1,4 @@
-function [Tdist,town]=traveling(x,y,D)
+function [Tdist,town,iterations]=traveling(x,y,D)
 
 % uses simulated annealing to solve the Traveling Salesman Problem: given n
 % towns and the distances between any two of them, finds the shortest route 
@@ -14,7 +14,10 @@ for i=1:n-1                               % initial length
 end
 T=1;     % initial temperature
 i=0;
+iterations = 1;
+
 while i < 100  % stop if no changes for 100 iterations
+    iterations = iterations + 1;
     c=ceil(n*rand);     % randomly chooses a town (at position c in route)
     if c==1  
         previous=n; next1=2; next2=3;
