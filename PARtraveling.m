@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 function [a] = PARtraveling(n,procs)
+||||||| merged common ancestors
+function PARtraveling(n,procs,x,y)
+=======
+function PARtraveling(n,procs)
+>>>>>>> e472a54d7fda791e0b81ddd085c5a5601dd1d92e
 
 % This is a simulation of a parallel execution on p processors of the code
 % traveling which uses simulated annealing to find the shortest route to go
